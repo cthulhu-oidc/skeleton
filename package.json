@@ -11,6 +11,7 @@
 		"test:typescript": "tsd"
 	},
 	"devDependencies": {
+		"@fastify/pre-commit": "^2.0.2",
 		"@types/node": "18.7.16",
 		"rimraf": "3.0.2",
 		"standard": "^17.0.0",
@@ -29,15 +30,9 @@
 	"engines": {
 		"node": ">=14"
 	},
-	"tsd": {
-		"directory": "spec/types",
-		"compilerOptions": {
-			"strict": true,
-			"forceConsistentCasingInFileNames": true,
-			"strictNullChecks": true,
-			"module": "commonjs",
-			"target": "ES2017"
-		}
-	},
+	"pre-commit": [
+		"lint",
+		"test"
+	],
 	"homepage": "https://github.com/cthulhu-oidc/skeleton#readme"
 }
