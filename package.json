@@ -6,9 +6,9 @@
 	"types": "./types/index.d.ts",
 	"scripts": {
 		"lint": "standard",
-		"test": "npm run test:logic && npm run test:typescript",
+		"test": "npm run test:logic && npm run test:types",
 		"test:logic": "tap",
-		"test:typescript": "tsd"
+		"test:types": "tsd"
 	},
 	"devDependencies": {
 		"@fastify/pre-commit": "^2.0.2",
