@@ -1,0 +1,43 @@
+{
+	"name": "@cthulhu-oidc/skeleton",
+	"version": "0.0.1",
+	"description": "Skeleton",
+	"main": "./lib/index.js",
+	"types": "./types/index.d.ts",
+	"scripts": {
+		"lint": "standard",
+		"test": "npm run test:unit && npm run test:typescript",
+		"test:unit": "tap",
+		"test:typescript": "tsd"
+	},
+	"devDependencies": {
+		"@types/node": "18.7.16",
+		"rimraf": "3.0.2",
+		"standard": "^17.0.0",
+		"tap": "^16.3.0",
+		"tsd": "0.23.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/cthulhu-oidc/skeleton.git"
+	},
+	"author": "Aras Abbasi <aras.abbasi@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/cthulhu-oidc/skeleton/issues"
+	},
+	"engines": {
+		"node": ">=14"
+	},
+	"tsd": {
+		"directory": "spec/types",
+		"compilerOptions": {
+			"strict": true,
+			"forceConsistentCasingInFileNames": true,
+			"strictNullChecks": true,
+			"module": "commonjs",
+			"target": "ES2017"
+		}
+	},
+	"homepage": "https://github.com/cthulhu-oidc/skeleton#readme"
+}
